@@ -1,0 +1,62 @@
+config:
+  # How many lines a page should be made of? 10 fills the chat nicely
+  page-height: 10
+  # set your bookmarks here. a bookmark simply jumps to a page.
+  bookmarks:
+    # jumps to page 2
+    tips: 2
+    # jumps to page 3
+    colors: 3
+  # How many seconds should the timer wait to send a tip?
+  tip-timer: 300
+  # In which worlds tips shouldn't be sent?
+  world-blacklist:
+    - "concentrate"
+    - "minigames"
+# Write your pages here. No division is needed, but take page-height in mind.
+pages: # Width must be < 53                           | around here
+  - "=================================================="
+  - "Hello and welcome to the re-release of HelpMe"
+  - "+ Tips by CKittycannon. This plugin allows you to"
+  - "create your custom /help pages. This plugin does"
+  - "not hides the /?, btw. sorry. Note that the"
+  - "author lacks a sense of art and so these messages"
+  - "are propably shown in a very ugly white color. But"
+  - "fear not, in the config you only need to press"
+  - "§aALT + 21§r to make the color symbol apear."
+  - "=================================================="
+  - "=================================================="
+  - "                     §aAbout the tips"
+  - "A tip will be shown to all players in a server"
+  - "unless they are in a blacklisted world or they"
+  - "don't have the permission to get it. Tips are"
+  - "supposed to be useful information that your"
+  - "players may require because they don't know the"
+  - "full details of minecraft or the features you've"
+  - "put in your sever."
+  - "=================================================="
+  - "=================================================="
+  - "                      §3Color codes!"
+  - " $0 = §0black §r$1 = §1dark blue"
+  - " $2 = §2dark green §r$3 = §3dark aqua"
+  - " $4 = §4dark red §r$5 = §5dark purple"
+  - " $6 = §6gold §r$7 = §7gray"
+  - " $8 = §8dark gray §r$9 = §9blue"
+  - " $a = §agreen §r$b = §baqua"
+  - " $c = §cred §r$d = §dlight purple"
+  - "=================================================="
+  - "=================================================="
+  - "             §3Color codes! - cont."
+  - " $e = §eyellow §r$f = §fwhite"
+  - " $k = §kobfuscated §r$l = §lbold"
+  - " $m = §mstrikethrough §r$n = §nunderline"
+  - " $o = §oitalic §r$r = §rreset"
+  - ""
+  - ""
+  - ""
+  - "=================================================="
+# Put your tips here. A random tip is picked when sent.
+tips:
+  - "This is a tip. These appear randomly every x seconds."
+  - "§aThis is a colored tip. §eWow! another color!"
+  - "If you see this go configure HelpMePlusTips"

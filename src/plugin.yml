@@ -1,0 +1,6 @@
+  name: "HMPT"
+  main: dev.ckitty.mc.helpme.main.HelpMain
+  version: "1.0"
+  commands:
+    hmpt:
+        aliases: [help]

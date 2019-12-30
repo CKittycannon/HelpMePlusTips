@@ -1,0 +1,13 @@
+misc:
+  not-a-number: "The argument {n} must be a valid number."
+  page-doesnt-exist: "The page {n} doesn't exist!"
+  tip-doesnt-exist: "The tip {n} doesn't exist!"
+  bmark-doesnt-exist: "The bookmark '{bmark}' doesn't exist!"
+  no-perm-cmd: "You don't have permission to use this command."
+cmds:
+  hmpt-usage: "Use: /hmpt <tip|help|reload>"
+  hmpt-tip: "Use: /hmpt tip [n]"
+  hmpt-help: "Use: '/hmpt help [n]' or '/hmpt help <bookmark> <n>'"
+  hmpt-reload: "Use: /hmpt reload"
+  help-usage: "Use: '/help [n]' or '/help <bookmark> [n]'"
+  reloaded: "Reloaded configuration!"
