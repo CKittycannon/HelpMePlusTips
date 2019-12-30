@@ -94,12 +94,22 @@ public class HelpMain extends JavaPlugin implements Listener {
         
         // label: help
         if (label.equalsIgnoreCase("help")) {
+            if(!sender.hasPermission("helpme.help.redirect")) {
+                sender.sendMessage(lang("misc.no-perm-cmd"));
+                return true;
+            }
+            
             HELPMAN.help(sender, args);
             return true;
         }
         
         if (args.length == 0) {
             sender.sendMessage(lang("cmds.hmpt-usage"));
+            return true;
+        }
+    
+        if(!sender.hasPermission("helpme.help.command")) {
+            sender.sendMessage(lang("misc.no-perm-cmd"));
             return true;
         }
         
@@ -158,6 +168,11 @@ public class HelpMain extends JavaPlugin implements Listener {
                     sender.sendMessage(lang("cmds.hmpt-help"));
                 break;
             case "reload":
+                if(!sender.hasPermission("helpme.help.reload")) {
+                    sender.sendMessage(lang("misc.no-perm-cmd"));
+                    return true;
+                }
+                
                 if (args.length != 1) { // just one arg
                     sender.sendMessage(lang("cmds.hmpt-reload"));
                     return true;
